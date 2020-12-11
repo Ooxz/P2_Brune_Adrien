@@ -138,17 +138,18 @@
   }
 
   .searchFiltersFilterWrapicon {
-      border: 2px solid grey;
-      border-radius: 150px;
+      border: 1px solid grey;
+      border-radius: 27px;
       min-width: 125px;
-      height: auto;
+      height: 90%;
       width: auto;
       display: flex;
       align-items: center;
       font-weight: bold;
+      border-left: none;
   }
 
-  .searchFiltersFilterWrapiconIcon {
+  .searchFilters .Icon {
     text-align: center;
     background-color: #DEEBFF;
     color: #0065FC;
@@ -301,7 +302,7 @@
   .hostingPopularhostingMainCard {
     height: 8.75rem;
   }
-  
+
   @media (max-width: 1440px) {
     .hosting {
       grid-template-columns: 1fr;
@@ -322,11 +323,7 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
-  @media (max-width: 925px) and (min-width: 650px) {
-    .hostingMain {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
+
   @media (max-width: 650px) {
     .hostingMain {
       grid-template-columns: 1fr;
@@ -338,7 +335,7 @@
       grid-template-rows: auto repeat(3, 9rem);
     }
   }
-
+  
   .activity {
     display: grid;
     column-gap: 2rem;
