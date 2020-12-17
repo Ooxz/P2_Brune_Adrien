@@ -184,32 +184,36 @@ margin-left: 1rem;
 .hosting{
 background-color: #F2F2F2;
 border-radius: 1rem;
-height: 32rem;
-width: 50rem;
+width: 66vw;
 }
 
 .hostingArticle{
-display: inline-flex;
-flex-wrap: wrap;
-justify-content: space-between;
 background-color: white;
 border-radius: 1rem;
-height: 11rem;
-width: 13rem;
+/*width: 13rem;*/
+width: 280px;
+margin: 20px 20px 20px 20px;
 padding: 0.3rem;
+}
+
+.hostingArticle:hover{
+    transform: scale(1.015);
+}
+
+.hostingArticleList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .hostingTitle{
     font-weight: bold;
     font-size: 20px;
     margin: 0;
-    margin-bottom: -1rem;
-    margin-left: -1.3rem;
     padding: 2rem;
 }
 
 .hostingImgTitle{
-    margin-top: -0.2rem;
     font-size: 1rem;
 }
 
@@ -217,8 +221,11 @@ padding: 0.3rem;
     margin: 0;
 }
 
+.hostingFigure h3{
+    margin: 0;
+}
 .hostingImg{
-  height: 7rem;
+  height: 9rem;
   object-fit: cover;
   max-width: 100%;
   width: 100%;
@@ -228,15 +235,14 @@ padding: 0.3rem;
 
 .hostingPrice{
     margin-left: 0;
-    margin-top: -1rem;
+    margin: 0;
     font-size: 1rem;
 }
 
 .hostingGrade{
     margin-left: 0;
-    margin-top: -0.5rem;
-
 }    
+
 .hostingStar[data-active=true] {
     color: #0065FC;
   }
@@ -246,7 +252,7 @@ padding: 0.3rem;
   }
 
   .hostingShowMore{
-      margin-top: 2rem;
+      padding: 20px 20px 20px 20px;
   }
   .hostingMore{
       font-size: 1rem;
