@@ -258,6 +258,83 @@ padding: 0.3rem;
       font-size: 1rem;
       font-weight: bold;
   }
+  /*HOSTING*/
 
+  /*POPULAR*/
+
+  .popular{
+    background-color: #F2F2F2;
+    border-radius: 1rem;
+    width: 40vw;
+  }
+  .popularArticle{
+    background-color: white;
+    border-radius: 1rem;
+    /*width: 13rem;*/
+    width: auto;
+    margin: 20px 20px 20px 20px;
+    padding: 0.3rem;
+  }
+
+    .popularArticle:hover{
+        transform: scale(1.015);
+    }
+
+    .popularArticleList{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .popularTitle{
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0;
+        padding: 2rem;
+    }
+    .popularImgTitle{
+        font-size: 1rem;
+    }
+    
+    .popularContent{
+        margin: 0;
+    }
+    
+    .popularContentTitles h3{
+        margin: 0;
+    }
+
+    .popularContentTitles{
+       margin-left: 20vw;
+       
+    }
+
+    .popularImg{
+        height: 9rem;
+        object-fit: cover;
+        max-width: 100%;
+        width: 50%;
+        max-height: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .popularPrice{
+        margin-left: 0;
+        margin: 0;
+        font-size: 1rem;
+    }
+    
+    .popularGrade{
+        margin-left: 0;
+    }    
+    
+    .popularStar[data-active=true] {
+        color: #0065FC;
+      }
+    
+    .popularStar[data-active=false] {
+        color: rgba(0, 0, 0, 0.26);
+      }
+/*POPULAR*/
 
 
