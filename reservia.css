@@ -263,17 +263,21 @@ padding: 0.3rem;
   /*POPULAR*/
 
   .popular{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1440px;
     background-color: #F2F2F2;
     border-radius: 1rem;
-    width: 40vw;
+    width: 30vw;
   }
   .popularArticle{
     background-color: white;
     border-radius: 1rem;
     /*width: 13rem;*/
-    width: auto;
     margin: 20px 20px 20px 20px;
     padding: 0.3rem;
+    width: 100%;
+    height: 9vw;
   }
 
     .popularArticle:hover{
@@ -289,44 +293,57 @@ padding: 0.3rem;
     .popularTitle{
         font-weight: bold;
         font-size: 20px;
-        margin: 0;
-        padding: 2rem;
+    }
+    .fa-chart-line{
+        margin-left: 16vw;
     }
     .popularImgTitle{
         font-size: 1rem;
     }
     
     .popularContent{
-        margin: 0;
+        position: relative;
+        min-height: 100%;
+        width: 33%;
+        min-width: 33%;
+        max-width: 33%;
     }
-    
-    .popularContentTitles h3{
-        margin: 0;
+    .popularWrap{
+        display: flex;
+        align-items: stretch;
+        height: 100%;
+        overflow: auto;
     }
-
     .popularContentTitles{
-       margin-left: 20vw;
-       
+        display: flex;
+        flex-direction: column;
     }
-
     .popularImg{
-        height: 9rem;
         object-fit: cover;
-        max-width: 100%;
-        width: 50%;
-        max-height: 100%;
-        border-radius: 1rem 1rem 0 0;
+        position: absolute;
+        height: 9vw;
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem 0 0 1rem;
     }
-
+    .popularImgTitle{
+        margin-bottom: 0;
+        margin-top: 0.5vw;
+        margin-left: 1vw;
+    }
+    .popularDescription{
+        margin-top: 1vw;
+        margin-left: 1vw;
+    }
+    .popularGrade{
+        margin-top: 2.7vw;
+        margin-left: 1vw;
+    }
     .popularPrice{
         margin-left: 0;
         margin: 0;
         font-size: 1rem;
     }
-    
-    .popularGrade{
-        margin-left: 0;
-    }    
     
     .popularStar[data-active=true] {
         color: #0065FC;
@@ -337,4 +354,25 @@ padding: 0.3rem;
       }
 /*POPULAR*/
 
+/*FOOTER*/
+.footer{
+    background-color: #F2F2F2;
+}
+
+.footerMain{
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    max-width: 100%;
+}
+.footerNav{
+    width: 30%;
+    padding: 2rem 2rem;
+}
+
+.footerLink{
+    display: block;
+}
 
