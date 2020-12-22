@@ -361,6 +361,7 @@ padding: 0.3rem;
 
 .footerMain{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     width: 1440px;
     margin: auto;
@@ -368,7 +369,7 @@ padding: 0.3rem;
     max-width: 100%;
 }
 .footerNav{
-    width: 30%;
+    width: 20%;
     padding: 2rem 2rem;
 }
 
