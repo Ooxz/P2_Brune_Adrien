@@ -181,17 +181,21 @@ margin-left: 1rem;
 /*FILTERS*/
 
 /*HOSTING*/
+.hostingPopular{
+display: flex;
+}
+
 .hosting{
 background-color: #F2F2F2;
 border-radius: 1rem;
-width: 66vw;
+width: 63vw;
 }
 
 .hostingArticle{
 background-color: white;
 border-radius: 1rem;
 /*width: 13rem;*/
-width: 280px;
+width: 255px;
 margin: 20px 20px 20px 20px;
 padding: 0.3rem;
 }
@@ -268,12 +272,13 @@ padding: 0.3rem;
     width: 1440px;
     background-color: #F2F2F2;
     border-radius: 1rem;
-    width: 30vw;
+    width: 35vw;
+    margin-left: 5vw;
   }
   .popularArticle{
     background-color: white;
     border-radius: 1rem;
-    /*width: 13rem;*/
+    box-shadow: 0 0 20px #0000002e;
     margin: 20px 20px 20px 20px;
     padding: 0.3rem;
     width: 100%;
@@ -295,7 +300,7 @@ padding: 0.3rem;
         font-size: 20px;
     }
     .fa-chart-line{
-        margin-left: 16vw;
+        margin-left: 19vw;
     }
     .popularImgTitle{
         font-size: 1rem;
@@ -354,6 +359,35 @@ padding: 0.3rem;
       }
 /*POPULAR*/
 
+/*ACTIVITY*/
+.activityTitle{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.activity{
+   display: flex; 
+   width: 1440px;
+}
+
+.activityCard{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1rem;
+    background-color: white;
+}
+.activityCard:hover {
+    transform: scale(1.015);
+  }
+.activityImg{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+/*ACTIVITY*/
+
 /*FOOTER*/
 .footer{
     background-color: #F2F2F2;
@@ -376,4 +410,5 @@ padding: 0.3rem;
 .footerLink{
     display: block;
 }
+/*FOOTER*/
 
