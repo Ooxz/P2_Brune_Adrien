@@ -370,6 +370,9 @@ padding: 0.3rem;
    width: 1440px;
 }
 
+.activityMainCard{
+    display: flex;
+}
 .activityCard{
     display: flex;
     flex-direction: column;
@@ -377,15 +380,43 @@ padding: 0.3rem;
     box-shadow: 0 0 20px #0000002e;
     border-radius: 1rem;
     background-color: white;
+    margin: 1vw;
 }
 .activityCard:hover {
     transform: scale(1.015);
   }
+.activityContent{
+    position: relative;
+    flex: 1;
+}
 .activityImg{
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
+
+.activityImgTitle{
+    font-size: 1vw;
+}
+
+.activityCard1{
+width: 50%;
+}
+
+.activityCard2{
+    align-self: baseline;
+}
+
+.activityCard3{
+align-self: end;
+margin-top: 20vw;
+width: 50%;
+}
+.activityCard4{
+    height: 31vw;
+    width: 50%;
+}
+
 /*ACTIVITY*/
 
 /*FOOTER*/
