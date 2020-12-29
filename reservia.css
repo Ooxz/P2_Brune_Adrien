@@ -466,3 +466,32 @@ padding: 0.3rem;
 }
 /*FOOTER*/
 
+@media screen and (max-width: 768px) {
+
+    .hostingPopular{
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+    .hosting{
+        margin-left: 2.3vw;
+        width: 50vw
+    }
+    .popular{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0px 18px;
+        width: 50vw;
+    }
+    .popularTitle{
+        margin-left: 0;
+    }
+    .activity {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+        }
+}
