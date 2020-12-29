@@ -18,12 +18,16 @@
 <body>
   <header class="header">
     <img class="headerLogo" src="./Projet2-Reservia/images/logo/Reservia@3x.png" alt="logo reservia" />
-    <nav class="HeaderNav">
-      <a class="headNavLink1" href="#hosting">Hébergement</a>
-      <a class="headNavLink2" href="#activity">Activités</a>
-      <a class="headNavSignup" href="#Signup">S'inscrire</a>
+    <nav class="headerNav">
+      <a class="headerNavLink1" href="#hosting">Hébergement</a>
+      <a class="headerNavLink2" href="#activity">Activités</a>
+      <a class="headerNavSignup" href="#signup">S'inscrire</a>
     </nav>
   </header>
+  <nav class="headerNavMobile" aria-label="Navigation">
+    <a class="headerNavLink1Mobile" data-active="true" href="#hosting">Hébergements</a>
+    <a class="headerNavLink2Mobile" data-active="false" href="#activity">Activités</a>
+</nav>
   <!--NAV-->
 
   <!--SEARCH-->
@@ -42,23 +46,19 @@
   <div class="filters">
     <h2 class="filtersTitle">Filtres</h2>
     <div class="filter">
-      <i class="fas fa-money-bill-wave filtersIcon">
-      </i>
+      <i class="fas fa-money-bill-wave filtersIcon"></i>
       <span class="filtersTexte">Économique</span>
     </div>
     <div class="filter">
-      <i class="fas fas fa-child filtersIcon">
-      </i>
+      <i class="fas fas fa-child filtersIcon"></i>
       <span class="filtersTexte">Familial</span>
     </div>
     <div class="filter">
-      <i class="fas fa-heart filtersIcon">
-      </i>
+      <i class="fas fa-heart filtersIcon"></i>
       <span class="filtersTexte">Romantique</span>
     </div>
     <div class="filter">
-      <i class="fas fa-dog filtersIcon">
-      </i>
+      <i class="fas fa-dog filtersIcon"></i>
       <span class="filtersTexte">Animaux autorisés</span>
     </div>
   </div>
