@@ -24,16 +24,16 @@
       <a class="headerNavSignup" href="#signup">S'inscrire</a>
     </nav>
   </header>
-  <nav class="headerNavMobile" aria-label="Navigation">
-    <a class="headerNavLink1Mobile" data-active="true" href="#hosting">Hébergements</a>
-    <a class="headerNavLink2Mobile" data-active="false" href="#activity">Activités</a>
+  <nav class="headerNavMobile">
+    <a class="headerNavLink1Mobile" href="#hosting">Hébergements</a>
+    <a class="headerNavLink2Mobile" href="#activity">Activités</a>
 </nav>
   <!--NAV-->
 
   <!--SEARCH-->
   <div class="searchTitles">
     <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-    <h2>En plein centre ville ou en plein nature</h2>
+    <h2>En plein centre ville ou en pleine nature</h2>
   </div>
   <form class="searchForm" action="traitement.php" method="post">
     <i class="fas fa-map-marker-alt searchIcon"></i>
@@ -64,7 +64,7 @@
   </div>
   <div class="result">
     <i class="fas fa-info resultIcon"></i>
-    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+    <p class="resultTitle">Plus de 500 logements sont disponibles dans cette ville</p>
   </div>
   <!--SEARCH-->
 
@@ -199,7 +199,8 @@
       </div>
     </div>
     <aside class="popular">
-      <h2 class="popularTitle">Les plus populaires<i class="fas fa-chart-line"></i></h2>
+      <h2 class="popularTitle">Les plus populaires</h2>
+      <i class="fas fa-chart-line"></i>
       <div class="popularArticleList">
         <article class="popularArticle">
           <a class="popularWrap" href="#">
