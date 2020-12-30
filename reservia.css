@@ -648,3 +648,10 @@ padding: 0.3rem;
             margin: 1vw 0;
         }
 }
+
+@media screen and (min-width: 816px){
+    .resultIcon{
+        display: flex;
+        margin-top: 3vw;
+    }
+}
