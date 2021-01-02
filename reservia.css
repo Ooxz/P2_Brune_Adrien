@@ -1,7 +1,11 @@
-.body{
-    max-width: 1440;
+html, body{
+    margin: 0;
+    padding: 0;
 }
-
+.container{
+    max-width: 1340px;
+    margin: auto;
+}
 a {
     color: inherit;
     text-decoration: none;
@@ -14,7 +18,6 @@ justify-content: space-between;
 align-items: center;
 margin-left: 1vw;
 font-size: 20px;
-margin-top: 2vw;
 }
 .headerNavMobile{
     display: none;
@@ -201,7 +204,6 @@ margin-left: 2vw;
 /*HOSTING*/
 .hostingPopular{
 display: flex;
-margin-left: 2vw;
 }
 
 .hosting{
@@ -213,10 +215,9 @@ width: 70vw;
 .hostingArticle{
 background-color: white;
 border-radius: 1rem;
-/*width: 13rem;*/
-width: 255px;
+width: 27%;
 box-shadow: 0 0 20px #0000002e;
-margin: 20px 20px 20px 20px;
+margin: 1% 20px 1% 20px;
 padding: 0.3rem;
 }
 
@@ -288,12 +289,12 @@ padding: 0.3rem;
 
   .popular{
     display: flex;
-    flex-wrap: wrap;
-    width: 1440px;
+    flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 1rem;
     width: 35vw;
     margin-left: 5vw;
+    position: relative;
   }
   .popularArticle{
     background-color: white;
@@ -311,25 +312,23 @@ padding: 0.3rem;
 
     .popularArticleList{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        width: 85%;
         justify-content: space-between;
     }
 
     .popularTitle{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
         font-weight: bold;
         font-size: 20px;
     }
     .fa-chart-line{
-        /*padding: 0px 0px 0px 220px;*/
     display: flex;
     align-items: flex-start;
     position: absolute;
     font-size: 20px;
-    margin-left: 27vw;
-    margin-top: 1vw;
+    top: 1vw;
+    right: 1vw;
+    position: absolute;
     }
     .popularImgTitle{
         font-size: 1rem;
@@ -370,7 +369,7 @@ padding: 0.3rem;
         margin-left: 1vw;
     }
     .popularGrade{
-        margin-top: 2.7vw;
+        margin-top: auto;
         margin-left: 1vw;
     }
     .popularPrice{
@@ -397,10 +396,11 @@ padding: 0.3rem;
 .activity{
    display: grid;
    column-gap: 2vw;
-   width: 1440px;
-   margin: 2vw;
+   width: 100%;
    grid-template-columns: repeat(4, 1fr);
    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+   margin: 3rem 0rem;
+
 }
 
 .activityCard{
@@ -466,21 +466,60 @@ padding: 0.3rem;
     flex-direction: row;
     width: 1440px;
     margin: auto;
-    padding: 0 2rem;
+    padding: 0 0rem;
     max-width: 100%;
 }
 .footerNav{
-    width: 20%;
-    padding: 2rem 2rem;
+    flex: 1;
+    padding: 2rem 0rem;
 }
 
 .footerLink{
     display: block;
 }
 /*FOOTER*/
+@media all and (max-width: 1280px){
+    .container{
+        width: 90%;
+    }
+.hostingArticle {
+    width: 27%;
+}
+.hostingPopular{
+    display: flex;
+    flex-direction: column;
+    }
+    .hosting{
+        width: 100%;
+        order: 2;
+    }
+    .popular{
+        margin-left: 0;
+        flex-direction: column;
+        width: 100%;
+        order: 1;
+        margin-bottom: 4vw;
+    }
+    .popularArticleList{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .popularArticle{
+        background-color: white;
+    border-radius: 1rem;
+    width: 27%;
+    height: 200px;
+    box-shadow: 0 0 20px #0000002e;
+    margin: 1% 20px 1% 20px;
+    padding: 0.3rem;
+    }
+}
+@media screen and (max-width: 890px) {
 
-@media screen and (max-width: 1380px) {
-
+.container{
+    margin: 0;
+}
     .header{
         width: 50%;
     }
@@ -514,8 +553,8 @@ padding: 0.3rem;
         padding: 0px 55px 10px 55px;
     }
     .headerNavSignup{
-        display: flex;
-        position: absolute;
+        margin-left: 7vw;
+        
     }
     .searchForm{
         margin-top: 4vw;
@@ -559,11 +598,10 @@ padding: 0.3rem;
         margin-bottom: 3vw;
     }
     .hostingPopular{
-        flex-direction: column-reverse;
         margin: auto;
     }
     .hosting{
-        margin-left: 5vw;
+        margin-left: 3vw;
         width: 50vw;
         background-color: white;
     }
@@ -580,8 +618,15 @@ padding: 0.3rem;
         flex-direction: column;
         justify-content: flex-start;
         border-radius: 0vw;
-        margin: 0px 3vw;
-        width: 50vw;
+        margin: 0px 0vw;
+        width: 55vw;
+    }
+    .popularArticleList{
+        display: flex;
+        flex-direction: column;
+    }
+    .popularArticle{
+        width: auto;
     }
     .popularTitle{
         margin-right: 20vw;
@@ -590,14 +635,13 @@ padding: 0.3rem;
     .fa-chart-line{
         margin-left: 42vw;
         margin-top: 2vw;
-        position: absolute;
     }
     .popularContentTitles{
         display: flex;
         flex-wrap: wrap;
         margin-left: 5vw;
     }
-
+    .popularWrap
     .popularArticle{
         background-color: white;
         border-radius: 1rem;
@@ -609,9 +653,7 @@ padding: 0.3rem;
       }
       .popularGrade{
           display: flex;
-          margin-bottom: 0;
-          position: absolute;
-          margin-top: 15vw;
+          margin-top: auto;
           
       }
       .popularImg{
@@ -626,8 +668,8 @@ padding: 0.3rem;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        width: 50%;
-        margin-left: 5vw;
+        width: 55%;
+        margin-left: 3vw;
         }
         .activityCard{
             height: 30vw;
@@ -649,9 +691,4 @@ padding: 0.3rem;
         }
 }
 
-@media screen and (min-width: 816px){
-    .resultIcon{
-        display: flex;
-        margin-top: 3vw;
-    }
-}
+
