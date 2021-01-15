@@ -476,6 +476,7 @@ padding: 0.3rem;
 /*FOOTER*/
 @media all and (max-width: 1280px){
     .container{
+        align-items: center;
         width: 90%;
     }
 .hostingArticle {
@@ -527,7 +528,7 @@ padding: 0.3rem;
         width: 100%;
     }
     .headerAll{
-        width: 100%;
+        
         margin-left: 3vw;
         display: flex;
         justify-content: space-between;
@@ -541,16 +542,16 @@ padding: 0.3rem;
     .headerNav{
         display: flex;
         flex-wrap: wrap;
-        align-items: center; 
+        align-items: center;
     }
     .headerNavLink1{
-        order: 3;
+        
     }
     .headerNavLink2{
-        order: 2;
+        
     }
     .headerNavSignup{
-        order: 1;
+        
     }
     .searchTitles{
         margin-left: 3vw;
@@ -603,7 +604,7 @@ padding: 0.3rem;
         background-color: white;
     }
     .hostingArticle{
-        width: 90vw;
+        width: 93vw;
         margin-left: 0;
     }
     .hostingTitle{
@@ -661,7 +662,7 @@ padding: 0.3rem;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        width: 91%;
+        width: 93%;
         margin: 20px 0px 50px 30px;
         }
         .activityCard{
