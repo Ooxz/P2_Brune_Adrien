@@ -175,9 +175,13 @@ margin-left: vw;
 
 .result{
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px;
 }
-
+.resultTitle{
+    margin-bottom: 1px;
+}
 .resultIcon{
     display: flex;
     align-items: center;
@@ -189,7 +193,7 @@ margin-left: vw;
     height: 20px;
     width: 10px;
     font-size: 15px;
-    
+    margin-top: 12px;
 }
 
 .result p{
@@ -460,10 +464,10 @@ padding: 0.3rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 1440px;
+    width: 100%;
     margin: auto;
     padding: 0 0rem;
-    max-width: 100%;
+    max-width: 1440px;
 }
 .footerNav{
     flex: 1;
@@ -528,12 +532,10 @@ padding: 0.3rem;
         width: 100%;
     }
     .headerAll{
-        
         margin-left: 3vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
     }
     .headerLogo{
         display: flex;
@@ -542,16 +544,22 @@ padding: 0.3rem;
     .headerNav{
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-start;
     }
     .headerNavLink1{
-        
+        flex: 1;
+        order: 2;
+        width: calc(50% - 2rem - 20px);
     }
     .headerNavLink2{
-        
+        flex: 1;
+        order: 3;
+        width: calc(50% - 2rem - 20px);
     }
     .headerNavSignup{
-        
+        flex: 1;
+        order: 1;
+        width: calc(50% - 2rem - 20px);
     }
     .searchTitles{
         margin-left: 3vw;
@@ -591,16 +599,20 @@ padding: 0.3rem;
         display: flex;
         width: 95%;
         margin-left: 3vw;
+        line-height: 25px;
+        align-items: flex-start;
+        margin: 20px;
     }
     .resultIcon{
         display: flex;
+        margin-top: 14px;
     }
     .hostingPopular{
         margin: auto;
     }
     .hosting{
         margin-left: 3vw;
-        width: 100%;
+        width: 97%;
         background-color: white;
     }
     .hostingArticle{
@@ -633,9 +645,10 @@ padding: 0.3rem;
         display: flex;
         flex-direction: column;
         padding: 1rem 1rem 3rem 1rem;
+        width: calc(100% - 2rem);
     }
     .popularArticle{
-        width: auto;
+        width: calc(100% - 0.6rem - 40px);
     }
     .popularContentTitles{
         display: flex;
@@ -676,10 +689,10 @@ padding: 0.3rem;
         .footerMain{
             flex-direction: column;
             padding: 2vw;
+            width: 96vw;
         }
 
         .footerNav{
-            width: 100%;
             padding: 0;
             margin-left: 3vw;
         }
