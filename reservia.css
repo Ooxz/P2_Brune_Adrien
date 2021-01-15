@@ -485,6 +485,12 @@ padding: 0.3rem;
     display: flex;
     flex-direction: column;
     }
+    .popularTitleIconWrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 20px 10px 20px;
+    }
     .hosting{
         width: 100%;
         order: 2;
@@ -515,20 +521,27 @@ padding: 0.3rem;
 
 .container{
     margin: 0;
+    width: 100%;
 }
     .header{
         width: 100%;
     }
     .headerAll{
-        display: flex;
-        flex-wrap: wrap;
         width: 100%;
         margin-left: 3vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .headerLogo{
+        display: flex;
+        height: 3rem;
     }
     .headerNav{
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center; 
     }
     .headerNavLink1{
         order: 3;
@@ -586,7 +599,7 @@ flex-direction: row;
     }
     .hosting{
         margin-left: 3vw;
-        width: 95vw;
+        width: 100%;
         background-color: white;
     }
     .hostingArticle{
@@ -606,7 +619,7 @@ flex-direction: row;
         flex-direction: column;
         justify-content: flex-start;
         border-radius: 0vw;
-        width: 96vw;
+        width: 100%;
     }
     .popularTitleIconWrap{
         display: flex;
@@ -648,8 +661,8 @@ flex-direction: row;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        width: 100%;
-        margin-left: 3vw;
+        width: 91%;
+        margin: 20px 0px 50px 30px;
         }
         .activityCard{
             height: 30vw;
@@ -667,7 +680,7 @@ flex-direction: row;
         .footerNav{
             width: 100%;
             padding: 0;
-            margin: 1vw 0;
+            margin-left: 3vw;
         }
 }
 
