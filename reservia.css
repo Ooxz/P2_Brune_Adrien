@@ -537,8 +537,7 @@ padding: 0.3rem;
     width: 100%;
 }
     .header{
-        width: 100%;
-        margin-left: 10vw;
+        margin-left: 3.5rem;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -574,14 +573,14 @@ padding: 0.3rem;
         order: 1;
     }
     .searchTitles{
-        margin-left: 10vw;
+        margin-left: 3.5rem;
     }
     .searchForm{
         margin-top: 4vw;
         margin-left: 3rem;
     }
       .searchTitles h1{
-          width: 100%;
+          
       }
     .searchButtonText{
         display: none;
@@ -592,26 +591,26 @@ padding: 0.3rem;
         color: white;
     }
     .searchButton{
-        width: 6%;
-        border-radius: 1.2vw;
-        margin-left: -1vw;
+        width: 3rem;
+        border-radius: 0.7rem;
+        margin-left: -0.7rem;
     }
     .filters{
         display: flex;
         flex-wrap: wrap;
         align-content: center;
-        margin-left: 3vw;
+        margin-left: 1.5rem;
     }
 .filtersTitle{
     margin-left: 2.2rem;
 }
     .filter{
         margin-top: 2vw;
+        margin-left: 1.5rem;
         
     }
     .result{
         display: flex;
-        width: 95%;
         margin-left: 50rem;
         line-height: 25px;
         align-items: flex-start;
@@ -695,9 +694,6 @@ padding: 0.3rem;
         .activityCard{
             height: 30vw;
             margin-top: 4vw;
-            width: 100%;
-        }
-        .footer{
             width: 100%;
         }
         .footerMain{
