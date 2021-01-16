@@ -551,21 +551,21 @@ padding: 0.3rem;
     .headerNav{
         display: flex;
         flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: flex-start;
     }
     .headerNavLink1{
         flex: 1;
         order: 2;
         width: calc(50% - 2rem - 20px);
         border-top: none;
-        border-bottom: 3px solid #F2F2F2;
+        margin: 0;
+        border-bottom: 3px solid #0065FC;
     }
     .headerNavLink2{
         flex: 1;
         order: 3;
         width: calc(50% - 2rem - 20px);
         border-top: none;
+        margin: 0;
         border-bottom: 3px solid #F2F2F2;
     }
     .headerNavSignup{
@@ -579,9 +579,6 @@ padding: 0.3rem;
         margin-top: 4vw;
         margin-left: 3rem;
     }
-      .searchTitles h1{
-          
-      }
     .searchButtonText{
         display: none;
     }
