@@ -60,7 +60,7 @@ display: flex;
 }
 
 .headerNavSignup{
-    font-weight: 1000;
+    font-weight: 800;
     color: #0065FC;
     padding: 30px 10px 20px 10px;
 }
@@ -76,12 +76,10 @@ h1{
 h2{
     font-size: 15px;
     font-weight: lighter;
-    margin-left: vw;
 }
 
 .searchForm{
 display: flex;
-margin-left: vw;
 }
 
 .searchIcon{
@@ -164,16 +162,14 @@ margin-left: vw;
 .filtersIcon{
     background-color: #DEEBFF;
     border-radius: 100%;
-    border: 1px solid #DEEBFF;
     color: #0065FC;
     font-size: 20px;
     margin: -2px;
-    padding: 10px 13px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1.4rem;
-    width: 1.4rem;
+    height: 44px;
+    width: 44px;
 }
 
 .filtersTexte{
@@ -640,7 +636,7 @@ padding: 0.3rem;
     }
     .hostingMore{
         font-size: 1rem;
-        font-weight: 1000;
+        font-weight: 800;
     }
     .popular{
         align-items: center;
