@@ -169,6 +169,11 @@ margin-left: vw;
     font-size: 20px;
     margin: -2px;
     padding: 10px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.4rem;
+    width: 1.4rem;
 }
 
 .filtersTexte{
@@ -595,6 +600,7 @@ padding: 0.3rem;
     .filters{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         align-content: center;
         margin-left: 1.5rem;
     }
