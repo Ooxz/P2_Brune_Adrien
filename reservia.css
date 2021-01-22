@@ -15,9 +15,7 @@ a {
 /*HEADER*/
 .header{
 font-size: 20px;
-display: flex;
-    justify-content: space-between;
-    align-items: center;
+
 }
 
 .header a{
@@ -34,10 +32,13 @@ display: flex;
     align-items: center; 
 }
 
+.headerNav div{
+    width: 100%;
+}
+
 .headerNavLink1{
    text-align: center; 
    color: #0065FC;
-   margin-right: 2rem;
    border-top: 2px solid white;
    padding: 30px 10px 20px 10px;
 }
@@ -45,14 +46,15 @@ display: flex;
 .headerNavLink2{
    text-align: center; 
    color: black;
-   margin-right: 2rem;
    border-top: 2px solid white;
    padding: 30px 10px 20px 10px;
 }
+
 .headerNavLink1:hover{
     border-top: 2px solid #0065FC;
     padding: 30px 10px 20px 10px;
 }
+
 .headerNavLink2:hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
@@ -63,6 +65,7 @@ display: flex;
     font-weight: 800;
     color: #0065FC;
     padding: 30px 10px 20px 10px;
+    
 }
 /*HEADER*/
 
@@ -156,7 +159,7 @@ display: flex;
 .filterAll{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .filtersIcon{
@@ -538,40 +541,49 @@ padding: 0.3rem;
     width: 100%;
 }
     .header{
-        margin-left: 3.5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
     }
     .headerLogo{
         display: flex;
         height: 3rem;
+        margin-left: 3.5rem;
     }
     .headerNav{
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+    }
+    .headerNav div{
+        width: 50%;
     }
     .headerNavLink1{
-        flex: 1;
         order: 2;
-        width: calc(50% - 2rem - 20px);
-        border-top: none;
+        width: calc(50% - 20px);
         margin: 0;
         align-self: flex-end;
         border-bottom: 3px solid #0065FC;
     }
+    .headerNavLink1:hover{
+        border-top: 0;
+    }
     .headerNavLink2{
-        flex: 1;
         order: 3;
-        width: calc(50% - 2rem - 20px);
-        border-top: none;
+        width: calc(50% - 20px);
         margin: 0;
         align-self: flex-end;
         border-bottom: 3px solid #F2F2F2;
     }
+    .headerNavLink2:hover{
+        border-top: 0;
+    }
     .headerNavSignup{
-        flex: 1;
         order: 1;
+        text-align: right;
+        width: calc(50% - 20px);
     }
     .searchTitles{
         margin-left: 3.5rem;
@@ -600,9 +612,10 @@ padding: 0.3rem;
         align-content: center;
         margin-left: 1.5rem;
     }
-.filtersTitle{
+    .filtersTitle{
     margin-left: 2.2rem;
-}
+    }
+
     .filter{
         margin-top: 2vw;
         margin-left: 1.5rem;
